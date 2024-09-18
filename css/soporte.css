@@ -1,0 +1,202 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-image: url("../img/BG_Escritorio.jpg");
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    
+}
+.navbar img {
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-weight: bold;
+}
+.navbar ul li a.contact {
+    background-color: #1777b4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navbar .menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.main {
+    text-align: center;
+    padding: 50px 20px;
+    color: #ffffff;
+}
+.main h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.main .content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(10, 64, 172, 0.5);
+    border-radius: 20px;
+}
+.main p {
+    font-size: 18px;
+    font-style: italic;
+}
+.section {
+    padding: 50px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.section .content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(10, 64, 172, 0.5);
+    border-radius: 20px;
+}
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.container {
+    width: 47.3%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px 0;
+    flex: 1;
+}
+.service {
+    background-color: rgba(10, 64, 172, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.service img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+.service h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+.service p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+footer p {
+    margin: 5px 0;
+    color: black;
+}
+footer img {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 70px;
+    height: auto;
+}
+.clickable-image {
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+        padding: 0;
+    }
+    .navbar ul li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar ul li a {
+        color: black;
+        font-weight: 500;
+    }
+    .navbar .menu-icon {
+        display: block;
+    }
+    .navbar ul.show {
+        display: flex;
+    }
+    .container {
+        width: 90%;
+    }
+    .service {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service img {
+        margin: 0 0 20px 0;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+    }
+    footer img {
+        position: static;
+        margin-top: 10px;
+    }
+     .images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
