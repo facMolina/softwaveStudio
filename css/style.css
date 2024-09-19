@@ -45,28 +45,14 @@ body, html {
     font-size: 1.5em;
     cursor: pointer;
 }
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 82vh;
-    color: white;
-    text-align: center;
-}
-.hero h1 {
+
+.title {
     font-size: 6em;
     margin: 0;
+    text-align: center;
 }
-.hero h2 {
-    font-size: 3em;
-    margin: 10px 0 5px 0;
-}
-.hero p {
-    font-size: 1.2em;
-    margin: 5px 0 20px 0;
-}
-.hero button {
+
+button {
     background-color: #1777b4;
     color: white;
     border: none;
@@ -75,6 +61,8 @@ body, html {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
 footer {
     position: relative;
     text-align: center;
@@ -136,19 +124,23 @@ footer {
     color: #fff;
     font-size: 36px;
     margin-bottom: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
 }
 .team {
+    background: #e6e6e6;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 .team-member {
-    background: #e6e6e6;
     border-radius: 10px;
     padding: 20px;
     width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 .team-member img {
@@ -163,7 +155,6 @@ footer {
 .team-member p {
     margin: 0;
     font-size: 14px;
-    color: #666;
 }
 .portfolio-button {
     display: inline-block;
@@ -174,4 +165,44 @@ footer {
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    font-size: 4em;
+    margin: 0;
+    color: white;
+}
+
+.text-and-image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    margin: 5px 0 20px 0;
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-style: oblique;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.text-box {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 200px;
+    border-radius: 5%;
 }
